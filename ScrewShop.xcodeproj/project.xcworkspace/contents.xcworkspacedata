@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:/Users/LloydPowell/Documents/progs/xcodestuff/ScrewShopGit/ScrewShop/AddedMusic"
+      name = "AddedMusic">
+      <FileRef
+         location = "group:UGKScrew10.mp3">
+      </FileRef>
+      <FileRef
+         location = "group:Know.mp3">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
