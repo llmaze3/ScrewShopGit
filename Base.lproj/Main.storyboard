@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9k1-wv-ePx">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vision713-->
+        <scene sceneID="yEb-vV-42B">
+            <objects>
+                <viewController id="QZL-NB-590" customClass="MainViewController" customModule="ScrewShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="InM-3K-Trm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="updatedscrewtitlescreen.gif" translatesAutoresizingMaskIntoConstraints="NO" id="ya4-2H-xVL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3V-dh-Cnc">
+                                <rect key="frame" x="119" y="409" width="177" height="116"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Enter" image="entertape"/>
+                                <connections>
+                                    <segue destination="5q6-NY-Fhb" kind="show" identifier="ARWorld2" id="LQq-eM-emv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PIj-Cd-JjZ">
+                                <rect key="frame" x="265" y="629" width="129" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Play Video" image="watchvideo"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="QZL-NB-590" eventType="touchUpInside" id="Rc7-io-Urx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2v1-tD-JG5">
+                                <rect key="frame" x="20" y="629" width="146" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Music" image="playmusic"/>
+                                <connections>
+                                    <segue destination="1rs-Ga-mUL" kind="show" id="CcL-sP-Ib9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GL1-bg-Del"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Vision713" id="d6h-ux-F94"/>
+                    <connections>
+                        <outlet property="enterAR" destination="i3V-dh-Cnc" id="akR-cu-UJh"/>
+                        <outlet property="gifView" destination="ya4-2H-xVL" id="uTv-kH-Fah"/>
+                        <segue destination="5q6-NY-Fhb" kind="show" identifier="ARWorld" id="wDa-JL-QcL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xw7-re-el5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.34782608695653" y="132.88043478260872"/>
+        </scene>
+        <!--Music View Controller-->
+        <scene sceneID="7WA-et-ihX">
+            <objects>
+                <viewController id="1rs-Ga-mUL" customClass="MusicViewController" customModule="ScrewShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5mm-7H-uy5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="updatedscrewtitlescreen.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Hj9-0Y-Chc" userLabel="Other Gif View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgp-16-fZO">
+                                <rect key="frame" x="0.0" y="624" width="96" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LAST" image="back"/>
+                                <connections>
+                                    <action selector="lastButton:" destination="1rs-Ga-mUL" eventType="touchUpInside" id="iOa-TU-vc8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnR-IS-0Uc">
+                                <rect key="frame" x="98" y="624" width="96" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PLAY" image="playbutton"/>
+                                <connections>
+                                    <action selector="playButton:" destination="1rs-Ga-mUL" eventType="touchUpInside" id="OUO-Ca-jX6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C49-II-sav">
+                                <rect key="frame" x="50" y="76" width="314" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Click Here To Start Playlist">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPlaylist:" destination="1rs-Ga-mUL" eventType="touchUpInside" id="3Nu-Ov-bF5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qw-3g-hZe">
+                                <rect key="frame" x="211" y="624" width="96" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PAUSE" image="buttonpause"/>
+                                <connections>
+                                    <action selector="pauseButton:" destination="1rs-Ga-mUL" eventType="touchUpInside" id="B8T-0T-i8P"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKq-cG-jLP">
+                                <rect key="frame" x="308" y="624" width="96" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="forward"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="1rs-Ga-mUL" eventType="touchUpInside" id="Q7t-W5-ch3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hj9-0Y-Chc" firstAttribute="bottom" secondItem="RvU-H6-iuO" secondAttribute="bottom" id="6xD-Lh-ROj"/>
+                            <constraint firstItem="C49-II-sav" firstAttribute="leading" secondItem="RvU-H6-iuO" secondAttribute="leading" constant="50" id="9Vi-GC-13w"/>
+                            <constraint firstItem="Hj9-0Y-Chc" firstAttribute="top" secondItem="RvU-H6-iuO" secondAttribute="top" id="Ld6-u6-Wzh"/>
+                            <constraint firstItem="Hj9-0Y-Chc" firstAttribute="leading" secondItem="RvU-H6-iuO" secondAttribute="leading" id="R4I-lH-uWx"/>
+                            <constraint firstItem="C49-II-sav" firstAttribute="top" secondItem="RvU-H6-iuO" secondAttribute="top" constant="12" id="TaB-cq-tPv"/>
+                            <constraint firstItem="Hj9-0Y-Chc" firstAttribute="trailing" secondItem="RvU-H6-iuO" secondAttribute="trailing" id="oAS-EK-Whn"/>
+                            <constraint firstItem="RvU-H6-iuO" firstAttribute="trailing" secondItem="C49-II-sav" secondAttribute="trailing" constant="50" id="pio-Fb-xR7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RvU-H6-iuO"/>
+                    </view>
+                    <connections>
+                        <outlet property="otherGifView" destination="Hj9-0Y-Chc" id="FVa-5s-cot"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7e-Ul-By2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.89855072463769" y="866.57608695652186"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController storyboardIdentifier="ARworld" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BV1-FR-VrT" customClass="ViewController" customModule="ScrewShop" customModuleProvider="target" sceneMemberID="viewController">
+                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </arscnView>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" springLoaded="YES" id="DAl-Y8-9tx"/>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1939.1304347826087" y="132.88043478260872"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tKI-j5-WXq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9k1-wv-ePx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bSS-qu-Cu8">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QZL-NB-590" kind="relationship" relationship="rootViewController" id="ZY8-Ly-P9B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTs-oY-GdS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-802.89855072463774" y="132.88043478260872"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mLc-rj-qeR">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5q6-NY-Fhb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Dfd-xK-NY5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="relationship" relationship="viewControllers" id="fnN-jG-kig"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjR-d4-qaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="132.88043478260872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="1080" height="1080"/>
+        <image name="buttonpause" width="1080" height="1080"/>
+        <image name="entertape" width="604" height="388"/>
+        <image name="forward" width="1080" height="1080"/>
+        <image name="playbutton" width="1080" height="1080"/>
+        <image name="playmusic" width="604" height="388"/>
+        <image name="updatedscrewtitlescreen.gif" width="1920" height="1080"/>
+        <image name="watchvideo" width="604" height="388"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wDa-JL-QcL"/>
+    </inferredMetricsTieBreakers>
+</document>
