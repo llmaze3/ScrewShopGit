@@ -58,14 +58,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A715397224132AF00A67326 /* ScrewShop */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ScrewShop;
-			path = ScrewShop/ScrewShop;
-			sourceTree = "<group>";
-		};
 		0A7153982241334400A67326 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +83,6 @@
 			children = (
 				0A7153952241318C00A67326 /* Default-568h@2x.png */,
 				0ACB4C0720C04F51000B3D98 /* ScrewShop */,
-				0A715397224132AF00A67326 /* ScrewShop */,
 				0ACB4C0620C04F51000B3D98 /* Products */,
 			);
 			sourceTree = "<group>";
